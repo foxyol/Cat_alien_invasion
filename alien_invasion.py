@@ -25,23 +25,23 @@ class AlienInvasion:
             self._update_screen()
 
     def _check_events(self):
-            # Отслеживает события клавиатуры и мыши
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    sys.exit()
-                elif event.type == pygame.KEYDOWN:
-                    if event == pygame.K_RIGHT:
-                        self.ship.moving_right = True
-                    elif event.type == pygame.KEYUP:
-                        self.ship.moving_right = False
+        # Отслеживает события клавиатуры и мыши
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                if event == pygame.K_RIGHT:
+                    self.ship.moving_right = True
+                elif event.type == pygame.KEYUP:
+                    self.ship.moving_right = False
 
     def _update_screen(self):
-            # При каждом проходе цикла перерисовывается цвет экрана
-            self.screen.fill(self.settings.bg_color)
-            self.ship.blitme()     
-                
-            # Отображение последнего прорисованного экрана
-            pygame.display.flip()
+        # При каждом проходе цикла перерисовывается цвет экрана
+        self.screen.fill(self.settings.bg_color)
+        self.ship.blitme()     
+
+        # Отображение последнего прорисованного экрана
+        pygame.display.flip()
 
 if __name__ == '__main__':
     # Создание эксемпляра и запуск игры
