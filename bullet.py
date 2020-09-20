@@ -11,7 +11,7 @@ class Bullet(Sprite):
         self.settings = ai_game.settings
         
         # Загружает изображение пули и получает прямоугольник
-        self.image = pygame.image.load('D:\Lets try\cat_alien_invasion\images\cat_bullet.png')
+        self.image = pygame.image.load('images/cat_bullet.png')
         self.rect = self.image.get_rect()
 
         # Создание снаряда в позиции (0, 0) и назначение правильной позиции
