@@ -1,11 +1,13 @@
 # Cat_alien_invasion
 
-# (Cat) Alien Invasion
+# :cat: Alien Invasion
 Alien invasion is a clone of popular arcade game with same name.
 I created this game by following the "Python Crash Course" book, ver.3. 
 The reason was to try myself in python and make an arcade not with ships
 and aliens, but with Pusheen cat and donuts. Below you can find some notes
 in brackets (like this one) 
+
+Some functions now isn't avalibale(high score, left ships), but I hope, I improve game.
 
 ##  Introduction
 > In Alien Invasion, the player controls a ship (cat) that appears at
